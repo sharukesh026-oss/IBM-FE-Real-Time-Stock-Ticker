@@ -1,30 +1,52 @@
 
 
-# IBM-FE — Real-Time Stock Ticker (Frontend)
+# IBM-FE-Real-Time-Stock-Ticker
 
+A modern **React-based frontend application** that displays real-time stock market data for IBM (or any configurable ticker symbol).  
+The app streams live prices, charts, and trade updates through WebSocket or REST APIs.
 
-Small front-end sample that demonstrates a real-time stock ticker UI. The project ships with: `index.html`, `style.css`, and `app.js` (all separate files).
+---
 
+## 🚀 Project Overview
 
-## Features
-- Clean, responsive UI with rolling ticker animation.
-- Local simulated feed (random-walk) so the demo runs offline.
-- Optional: polling a live provider (example code uses Finnhub's REST quote endpoint). You must supply your own API key.
+**IBM-FE-Real-Time-Stock-Ticker** is designed to show **real-time IBM stock prices** with smooth UI updates and responsive charts.  
+It can be easily extended to track multiple stocks or connected to any real-time market data source.
 
+### 🎯 Objectives
+- Display real-time stock price and change.
+- Render intraday charts for recent price movements.
+- Show trade events and timestamps.
+- Maintain lightweight, fast, and responsive performance.
 
-## Files
-- `index.html` — markup and controls.
-- `style.css` — styling and animation.
-- `app.js` — core logic: simulated feed + optional live polling.
+---
 
+## 🧩 Features
 
-## How to run
-1. Save the three files into a single folder: `index.html`, `style.css`, `app.js`.
-2. Open `index.html` in any modern browser. No build step required.
+- ⚡ **Live updates** via WebSocket or REST polling fallback.  
+- 📊 **Dynamic charts** (Recharts / Chart.js).  
+- 💡 **Configurable ticker symbol** (default: `IBM`).  
+- 🌙 **Light/Dark mode toggle**.  
+- 🔁 **Auto-reconnect** and error-handling for WebSocket.  
+- 🧠 Clean component structure and reusable hooks.
 
+---
 
-## Using real market data (optional)
-This project uses simulated updates by default. To use a live provider:
+## 🛠️ Tech Stack
 
+| Layer | Technology |
+|-------|-------------|
+| Frontend | React + Vite |
+| Styling | Tailwind CSS |
+| Charts | Recharts or Chart.js |
+| State Management | React Context / Hooks |
+| Data | WebSocket or REST API |
+| Testing | Jest + React Testing Library |
 
-1. Sign up with a provider (example: [Finnhub](https://finnhub.io) or Alpha Vantag
+---
+
+## ⚙️ Setup and Installation
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/your-username/IBM-FE-Real-Time-Stock-Ticker.git
+cd IBM-FE-Real-Time-Stock-Ticker
